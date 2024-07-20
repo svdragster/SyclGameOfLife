@@ -1,6 +1,4 @@
-CC :=/home/sven/llvm/bin/clang
-CXX :=/home/sven/llvm/bin/clang++
-CXXC :=/home/sven/acpp/bin/acpp
+CXXC :=/usr/local/bin/acpp 
 CXXFLAGS := -O3 -fopenmp=libomp -lSDL2 -v
 
 CPP_SOURCES := $(wildcard src/*.cpp)
