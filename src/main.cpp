@@ -29,7 +29,7 @@ void render_on_surfaces(const size_t width, const size_t height, SDL_Window *win
 using namespace std::chrono;
 
 
-const size_t frameAmount = 100;
+const size_t frameAmount = 1000;
 
 void render_frames_directly(size_t width, size_t height, SDL_Renderer *renderer, std::vector<GameOfLifeFrame> &frames) {
     for (GameOfLifeFrame frame: frames) {

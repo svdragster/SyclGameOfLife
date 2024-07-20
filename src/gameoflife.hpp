@@ -30,24 +30,6 @@ typedef std::vector<int> GameOfLifeFrame;
 
 
 
-class GameOfLifeData {
-public:
-    GameOfLifeData(size_t w, size_t h) : width(w), height(h), prevFrame(h, std::vector<int>(w, 0)) {
-
-    }
-
-    ~GameOfLifeData() = default;
-
-
-    size_t width;
-    size_t height;
-
-    std::vector<std::vector<int>> prevFrame;
-
-
-};
-
-
 namespace GameOfLife {
     GameOfLifeFrame buildGameOfLife(size_t width, size_t height) {
         GameOfLifeFrame frame(height * width, 0);
